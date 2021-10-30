@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
+}
+html,
+body{
+    position: relative;
+    font-family: montserrat;
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;  /*flex grow, flex shrink,, flex basis*/
+}
+
+/*HEADER*/
+header{
+    position: sticky;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+    display: inline;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    /*margin: 0, 5px; */
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.profile_btn{
+    display: inline;
+    float: right;
+    margin: 15px;
+    width: 50px;
+}
+
+.profile_btn img{
+    width: 50px;
+}
+
+
+
+.boxContainer_search{
+    width: 300px;
+    height: 42px;
+    position: relative;
+    border: 2px solid #1b9bff;
+    padding: 0px 15px;
+    border-radius: 50px;
+    background: white;
+    margin: 20px;
+}
+
+.elementsContainer{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    background: white;
+}
+.searchField{
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+
+}
+.searchField:focus{
+    outline: none;
+}
+
+.searchIcon{
+    color: #c7d4ff;
+}
+.searchLink{
+    background: none;
+}
+.searchLink:hover{
+    background: none;
+}
+
+
+.boxContainer_options{
+    /*border: 2px solid black;*/
+    width: 300px;
+    margin-left: 25px;
+}
+
+
+.option{
+    margin: 10px;
+}
+.option:checked{
+
+}
+
+.optionLabel{
+    font-size: 17px;
+    font-family: "Bookman Old Style";
+    color: darkblue;
+}
+
+.radioContainer{
+    margin-top: 5px;
+    position: relative;
+}
+.radio-option{
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.buttonContainer{
+    margin-left: 20px;
+}
+.button{
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 3px 2px 1px black;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+#submit_btn{
+    background-image: url("../img/submit.png");
+}
+#reset_btn{
+    background-image: url("../img/reset.png");
+}
+
+.boxContent{
+    /*border: 2px solid black;*/
+    width: 500px;
+    height: 800px;
+    flex-grow: 1;
+    margin: 30px;
+
+    height: fit-content;
+
+}
+
+.item{
+    position: relative;
+    margin: 25px;
+    display: inline-block;
+    width: 420px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.itemImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
+
+}
+
+.itemImage:hover{
+    background-color: rgba(0, 0, 0, .3);
+    filter: brightness(40%);
+}
+
+.select_btn{
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 1px black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+.select_btn:hover{
+    opacity: 1;
+}
+
+.itemImage:hover + .select_btn{
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+
+
+/*FOOTER*/
+footer{
+    height: 110px;
+    background-color: #004c8d;
+}
+
+#cloud_image{
+    width: 70px;
+    display: inline;
+    position: relative;
+    margin: 20px;
+    left: 200px;
+}
+
+#rights{
+    display: inline;
+    position: relative;
+    bottom: 45px;
+    left: 200px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+#contact_mail{
+    color: aliceblue;
+    font-size: 19px;
+    margin-top: 50px;
+    margin-right: 80px;
+    float: right;
+    background: none;
+
+}
+#contact_mail:hover{
+    color: #c7d4ff;
+}
+
+
+

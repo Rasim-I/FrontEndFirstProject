@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Web</title>
+    <link rel="stylesheet" href = "css/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header>
+        <nav>
+            <label class="logo">Test</label>
+
+            <input class="profile_btn" type="image" src="img/profile.png">
+
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+    <div class="boxInterface">
+
+        <div class="boxContainer_search">
+            <table class="elementsContainer">
+                <tr>
+                    <td>
+                        <input class="searchField" type="text" placeholder="Search">
+                    </td>
+                    <td>
+                        <a class="searchLink" href="#"><img class="searchIcon" src="img/search.png"></a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="boxContainer_options">
+            <table class="checkboxOptions">
+                <tr>
+                    <td>
+                        <label class="optionLabel"><input class="option" type="checkbox">Option 1</label>
+                    </td>
+                    <td>
+                        <label class="optionLabel"><input class="option" type="checkbox">Option 3</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="optionLabel"><input class="option" type="checkbox">Option 2</label>
+                    </td>
+                    <td>
+                        <label class="optionLabel"><input class="option" type="checkbox">Option 4</label>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="radioContainer">
+                <label class="optionLabel"><input class="radio-option" name="radio-option" id="radio1" type="radio">Radio option 1</label><br>
+                <label class="optionLabel"><input class="radio-option" name="radio-option" type="radio">Radio option 2</label><br>
+                <label class="optionLabel"><input class="radio-option" name="radio-option" type="radio">Radio option 3</label><br>
+            </div>
+
+            <div class="buttonContainer">
+                <input class="button" id="submit_btn" type="button">
+                <input class="button" id="reset_btn" type="button">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="boxContent" id="boxContent">
+
+        <script>
+            let wrapper = document.getElementById("boxContent");
+            let html_item = '';
+            for(let i = 0; i<10; i++){
+                html_item += '<div class="item">\n' +
+                    '            <img class="itemImage" src="img/picture'+i+'.png">\n' +
+                    '            <input class="select_btn" type="image" src="img/select.png">\n' +
+                    '        </div>'
+            }
+            wrapper.innerHTML += html_item;
+        </script>
+
+    </div>
+
+
+
+</main>
+<footer class="footer">
+    <img id="cloud_image" src="img/cloud.png">
+
+    <div id="rights"><label id ="year"></label> &copy;
+        <script>
+            let current_year = new Date();
+            document.getElementById("year").innerHTML = current_year.getFullYear().toString();
+        </script>
+    </div>
+
+    <a id="contact_mail" href="mailto:test@example.com">Contact us</a>
+</footer>
+
+</div>
+</body>
+
+
+
+</html>
